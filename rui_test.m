@@ -1,7 +1,7 @@
 addpath("./src/CINC2013/rui");
 pkg load signal;
 
-[h,r]=edfread("r01.edf");
+[h,r]=edfread("./data/adfecgdb/r01.edf");
 % what window to plot
 plot_win = 10000;
 % what window to process
