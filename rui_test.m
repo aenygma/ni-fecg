@@ -1,7 +1,7 @@
 addpath("./src/CINC2013/rui");
 pkg load signal;
 
-[h,r]=edfread("./data/adfecgdb/r01.edf");
+[h,r]=edfread("./data/adfecgdb/r04.edf");
 % what window to plot
 plot_win = 10000;
 % what window to process
@@ -22,7 +22,7 @@ title("Ab1");
 % restrict plot window
 g=f(f<plot_win);
 % get clearance above plot1
-y_clear = max(r(1,:)) * 0.6;
+y_clear = max(r(1,1:proc_win)) * 0.6;
 
 hold on;
 subplot(2,1,1);
