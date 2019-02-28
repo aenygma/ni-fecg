@@ -1,3 +1,6 @@
 
+# vim ignore files
+*.sw?
+
 # ignore downloaded data
 data/adfecgdb/
